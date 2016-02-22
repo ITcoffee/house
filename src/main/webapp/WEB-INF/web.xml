@@ -77,17 +77,17 @@
   <!-- 路径不正确 -->
   <error-page>
     <error-code>404</error-code>
-    <location>/errorpage/404.jsp</location>
+    <location>/WEB-INF/jsp/errorpage/404.jsp</location>
   </error-page>
   <!-- 没有访问权限，访问被禁止 -->
   <error-page>
     <error-code>405</error-code>
-    <location>/errorpage/405.jsp</location>
+    <location>/WEB-INF/jsp/errorpage/405.jsp</location>
   </error-page>
   <!-- 内部错误 -->
   <error-page>
     <error-code>500</error-code>
-    <location>/errorpage/500.jsp</location>
+    <location>/WEB-INF/jsp/errorpage/500.jsp</location>
   </error-page>
   <!-- 错误跳转页面 End -->
 </web-app>
