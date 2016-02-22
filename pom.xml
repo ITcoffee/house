@@ -1,0 +1,148 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.zhouyun.search</groupId>
+  <artifactId>house</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>com.zhouyun.search.house</name>
+  <description>垂直搜索引擎_房产</description>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+  	<spring.version>4.2.4.RELEASE</spring.version>
+  	<junit.version>4.12</junit.version>
+  	<mybatis.version>3.3.1</mybatis.version>
+  	<mybatis-spring.version>1.2.4</mybatis-spring.version>
+  	<mysql-connector-java.version>5.1.38</mysql-connector-java.version>
+  	<druid.version>1.0.17</druid.version>
+  	<jackson.version>1.9.13</jackson.version>
+  	<jackson.core.version>2.7.1</jackson.core.version>
+  	<slf4j.version>1.7.16</slf4j.version>
+    <log4j.version>1.2.17</log4j.version>
+  </properties>
+  <dependencies>
+  	<!-- spring Begin -->
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-core</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-web</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-oxm</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-tx</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-jdbc</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-webmvc</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-aop</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-context-support</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-test</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<!-- spring End -->
+  	
+  	<!-- mybatis Begin -->
+    <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis</artifactId>
+        <version>${mybatis.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis-spring</artifactId>
+        <version>${mybatis-spring.version}</version>
+    </dependency>
+  	<!-- mybatis End -->
+  	
+  	<dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql-connector-java.version}</version>
+    </dependency>
+  
+    <!-- 阿里巴巴数据源包 -->
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>druid</artifactId>
+        <version>${druid.version}</version>
+    </dependency>
+
+    <!-- json数据 -->
+    <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-mapper-asl</artifactId>
+        <version>${jackson.version}</version>
+    </dependency>
+    
+    <dependency>  
+        <groupId>com.fasterxml.jackson.core</groupId>  
+        <artifactId>jackson-core</artifactId>  
+        <version>${jackson.core.version}</version>  
+    </dependency>  
+    <dependency>  
+        <groupId>com.fasterxml.jackson.core</groupId>  
+        <artifactId>jackson-databind</artifactId>  
+        <version>${jackson.core.version}</version>  
+    </dependency>  
+    <dependency>  
+        <groupId>com.fasterxml.jackson.core</groupId>  
+        <artifactId>jackson-annotations</artifactId>  
+        <version>${jackson.core.version}</version>  
+    </dependency>  
+
+    <!-- 日志管理 Begin -->
+    <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>${log4j.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+    <!-- 日志管理 End -->
+  
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>house</finalName>
+  </build>
+</project>
