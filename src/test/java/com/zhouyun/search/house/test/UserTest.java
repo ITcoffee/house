@@ -25,7 +25,7 @@ public class UserTest {
 	public void addUser() {
 		User user = new User();
 		Date now = new Date();
-		user.setId("aaaaaaaa");
+		user.setId("bbbbbb");
 		user.setUsername("zhouyun");
 		user.setNickname("BigBigBoy");
 		user.setBirthday(now);
