@@ -13,7 +13,6 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserDao userDao;
 
-	@Override
 	public void insert(User user) {
 		userDao.insert(user);
 	}
